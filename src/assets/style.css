@@ -1,0 +1,59 @@
+.content {
+  /* border: 1px solid red; */
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: #dbdefd;
+}
+
+.content .question {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  position: relative; /* used so that child element inside it can be positioned  */
+}
+
+.question .count {
+  position: absolute; /* its parent question have positiob relative so, it is given absolute so we can give more positioning values  */
+  top: -20px;
+  left: 50%;
+  transform: translate(
+    -50%,
+    0
+  ); /* Need to make center on X axis, this moves element by its half size on x-axis */
+  background: #717aef;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block; /* make the element use only the space it need to cover, rather than covering whole width */
+}
+
+.xyz {
+  position: relative;
+  min-height: 100vh; /* 100vh means 100% height of the viewport/browser window */
+}
+
+.centerize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex {
+  display: flex; /* To make the children inside this component align horizontally */
+}
+
+.flex.jcsb {
+  justify-content: space-between; /* this make element align to left and right giving gap in middle if there is space for gap */
+}
+
+.flex.ci {
+  align-items: center; /* align flex items center on y-axis / cross-axis */
+}

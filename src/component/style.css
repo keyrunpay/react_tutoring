@@ -1,0 +1,16 @@
+.answer-pill {
+  /* flex: 1 means expand freely and cover whatever space is available */
+  /* this is only used inside children of those element whose parent element have display flex set */
+  flex: 1;
+  border: 1px solid #717aef;
+  background: #fff;
+  padding: 10px 20px; /* giving top-buttom 10px left-right 20px padding */
+  margin-top: 15px; /*  gap on top */
+  margin-right: 10px; /* gap on right */
+  border-radius: 8px;
+  cursor: pointer; /* change cursor to hand whenever the mouse enter this element */
+}
+
+.answer-pill.active {
+  background: #e8e9fe;
+}
