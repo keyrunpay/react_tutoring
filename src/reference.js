@@ -8,3 +8,21 @@ Full HTML/CSS Crash Course: https://www.youtube.com/watch?v=vQWlgd7hV4A
 JS Template Literals {`dfgh ${this}`} : https://www.youtube.com/watch?v=INPob8yPyBo
 JS Promises: https://www.youtube.com/watch?v=s6SH72uAn3Q
 */
+
+// Packages:
+// npm install --save react-router-dom axios
+
+// Client app
+//login
+//signup
+//quiz
+//if logged save score, see score
+
+// super app
+// dashboard
+// question add/delete/edit
+
+// Quiz
+// quiz title: Biology quiz
+// quiz type: public, private
+// qstn, answer

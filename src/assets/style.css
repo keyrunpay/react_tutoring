@@ -12,11 +12,18 @@ body {
 
 .content .question {
   background: #fff;
+  min-width: 600px;
   padding: 30px 20px;
   text-align: center;
   border-radius: 8px;
   border: 1px solid #ddd;
   position: relative; /* used so that child element inside it can be positioned  */
+}
+
+@media (max-width: 768px) {
+  .content .question {
+    min-width: 0;
+  }
 }
 
 .question .count {
@@ -50,10 +57,33 @@ body {
   display: flex; /* To make the children inside this component align horizontally */
 }
 
+@media (max-width: 768px) {
+  .flex {
+    display: block;
+  }
+}
+
 .flex.jcsb {
   justify-content: space-between; /* this make element align to left and right giving gap in middle if there is space for gap */
 }
 
 .flex.ci {
   align-items: center; /* align flex items center on y-axis / cross-axis */
+}
+
+nav a {
+  color: green;
+}
+
+nav a.active {
+  color: red;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
 }
